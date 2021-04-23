@@ -2,7 +2,7 @@
 % Email: deqing.wang@foxmail.com
 % Website: http://deqing.me/
 % Affiliation: Dalian University of Technology, China
-%              University of Jyv‰skyl‰, Finland
+%              University of Jyv√§skyl√§, Finland
 % Date: April 22, 2021
 % Desctirption: Plot ongoing EEG components extracted by NCP using iAPG
 % algorithm.
@@ -40,7 +40,7 @@ FreqIndex = linspace(FreqLow,FreqHigh,size(SpectralFactor,1));
 %% Correlation Analysis
 fprintf('Correlation analysis between temporal and music features ... \n');
 Time_zscore=zscore(TemporalFactor);
-Features_zscore=zscore(features_high);
+Features_zscore=zscore(long_term_features);
 [p05, p01, p001]=f_p_threshold_oneDim(Time_zscore,Features_zscore);
 CORR1=corr(Time_zscore,Features_zscore);
 
@@ -65,7 +65,7 @@ for jj=1:size(CORR1_P,2)
             subplot(3,4,[9 10 11 12]);
             plot(zscore(TemporalFactor(:,ii)),'linewidth',2);
             hold on
-            plot(zscore(features_high(:,jj)),'linewidth',2);
+            plot(zscore(long_term_features(:,jj)),'linewidth',2);
             hold off
             grid on
             xlim([0 length(TemporalFactor(:,ii))]);
