@@ -1,1 +1,1 @@
-# Ongoing_EEG_Tensor_Decomposition
+# Ongoing EEG signal processing using tensor decomposition
