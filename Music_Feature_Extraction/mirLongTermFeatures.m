@@ -7,7 +7,7 @@
 % Requirement: MIRToolbox 1.6.1
 
 % Reference:
-% V. Alluri, P. Toiviainen, I. P. J‰‰skel‰inen, et al. Large-scale brain
+% V. Alluri, P. Toiviainen, I. P. J√§√§skel√§inen, et al. Large-scale brain
 % networks emerge from dynamic processing of musical timbre, key and
 % rhythm[J]. Neuroimage, 2012, 59(4): 3677-3689.
 %
@@ -68,5 +68,6 @@ figure;plot(1:framenumber,FluctuationEntropy);xlabel('Frame Number');ylabel('Val
 figure;plot(1:framenumber,PulseClarity);xlabel('Frame Number');ylabel('Value');title('Pulse Clarity');
 
 %%
-save mirLongTermFeatures.mat PulseClarity FluctuationCentroid FluctuationEntropy mirkeyclaritydata mirmodedata
+long_term_features = [PulseClarity FluctuationEntropy FluctuationCentroid mirmodedata mirkeyclaritydata];
+save mirLongTermFeatures.mat long_term_features
 
