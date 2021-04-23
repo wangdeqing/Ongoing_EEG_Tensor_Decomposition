@@ -2,7 +2,7 @@
 % Email: deqing.wang@foxmail.com
 % Website: http://deqing.me/
 % Affiliation: Dalian University of Technology, China
-%              University of Jyv‰skyl‰, Finland
+%              University of Jyv√§skyl√§, Finland
 % Date: April 22, 2021
 % Desctirption: Tensor decomposition of an ERP dataset using the
 % inexact alternating proximal gradient (iAPG) algorithm.
@@ -28,7 +28,7 @@ close all
 
 %% Load Tensor Data
 load(['Data' filesep 'OngoingEEG_Tensor']);
-load(['Data' filesep 'musicalFeatures_longTerm']);
+load(['Data' filesep 'mirLongTermFeatures']);
 load(['Data' filesep 'chanlocs64']);
 
 MusicFeatureName={'Pulse Clarity','Fluctuation Entropy','Fluctuation Centroid','Mode','Key'};
