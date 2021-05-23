@@ -5,7 +5,7 @@
 - Website: http://deqing.me/
 - Affiliation: School of Biomedical Engineering, Dalian University of Technology, China
 
-- Introduction: The ongoing EEG data were collected by natural continous music stimuli, which is a morden tango of about 8.5 minutes.
+- Introduction: The ongoing EEG data were collected by natural continous music stimulus, which is a morden tango of about 8.5 minutes.
 
 References:
 
