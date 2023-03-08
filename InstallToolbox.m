@@ -38,10 +38,10 @@ end
 % analysis." Journal of neuroscience methods 134.1 (2004): 9-21.
 % 
 
-EEGLAB_path = [pwd filesep 'eeglab2021.0'];
+EEGLAB_path = [pwd filesep 'eeglab2021.1'];
 if ~exist(EEGLAB_path,'dir')
     fprintf('Installing EEGLAB ......\n');
-    EEGLAB_url = 'https://sccn.ucsd.edu/eeglab/currentversion/eeglab_current.zip';
+    EEGLAB_url = 'https://sccn.ucsd.edu/eeglab/download/daily/eeglab2021.1.zip';
     unzip(EEGLAB_url,pwd);
     addpath(genpath(EEGLAB_path));
     fprintf('The latest EEGLAB has been installed, and the path is \n\n    ''%s''\n\n',...
