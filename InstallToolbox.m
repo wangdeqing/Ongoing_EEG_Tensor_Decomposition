@@ -2,7 +2,7 @@
 % Email: deqing.wang@foxmail.com
 % Website: http://deqing.me/
 % Affiliation: Dalian University of Technology, China
-%              University of Jyv‰skyl‰, Finland
+%              University of Jyv√§skyl√§, Finland
 % Date: April 22, 2021
 % Desctirption: Install toolboxes online.
 %
@@ -41,7 +41,7 @@ end
 EEGLAB_path = [pwd filesep 'eeglab2021.0'];
 if ~exist(EEGLAB_path,'dir')
     fprintf('Installing EEGLAB ......\n');
-    EEGLAB_url = 'ftp://sccn.ucsd.edu/pub/daily/eeglab2021.0.zip';
+    EEGLAB_url = 'https://sccn.ucsd.edu/eeglab/currentversion/eeglab_current.zip';
     unzip(EEGLAB_url,pwd);
     addpath(genpath(EEGLAB_path));
     fprintf('The latest EEGLAB has been installed, and the path is \n\n    ''%s''\n\n',...
